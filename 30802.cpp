@@ -15,7 +15,7 @@ int main(void){
 
     int count = 0;
     for(int i = 0; i < sizeof(t_size)/sizeof(int); i++){
-        count += (t_size[i] + t -1)/t;
+        count += (t_size[i] + t -1)/t; //올림으로 나머지가 0일때를 고려할 필요 없음.
         // if(t_size[i] != 0){
         //     if(t_size[i]%t == 0) count += t_size[i]/t; //printf("%d", t_size[i]%t+1);
         //     else count += t_size[i]/t + 1; //printf("%d", t_size[i]%t);
