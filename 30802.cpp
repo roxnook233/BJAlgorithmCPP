@@ -15,10 +15,11 @@ int main(void){
 
     int count = 0;
     for(int i = 0; i < sizeof(t_size)/sizeof(int); i++){
-        if(t_size[i] != 0){
-            if(t_size[i]%t == 0) count += t_size[i]/t; //printf("%d", t_size[i]%t+1);
-            else count += t_size[i]/t + 1; //printf("%d", t_size[i]%t);
-        }
+        count += (t_size[i] + t -1)/t;
+        // if(t_size[i] != 0){
+        //     if(t_size[i]%t == 0) count += t_size[i]/t; //printf("%d", t_size[i]%t+1);
+        //     else count += t_size[i]/t + 1; //printf("%d", t_size[i]%t);
+        // }
     }
 
     printf("%d\n", count);
