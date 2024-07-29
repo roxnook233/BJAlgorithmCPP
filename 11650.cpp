@@ -5,9 +5,8 @@
 using namespace std;
 
 bool arrange(pair<int, int> a, pair<int, int> b){
-    if(a.first < b.first) return true;
-    else if(a.first == b.first) return a.second < b.second;
-    else return false;
+    if(a.first == b.first) return a.second < b.second;
+    else return a.first < b.first;
 }
 
 int main(void){//BJ 11650
